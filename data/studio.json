@@ -1,0 +1,24 @@
+{
+  "software": [
+    "WaveLab", "BandLab", "Acid", "Vegas", "RX", "Waves",
+    "Photoshop", "Illustrator", "VS Code"
+  ],
+  "hardware": [
+    "Adam A7V monitors", "Teisco Synthesizer 60F",
+    "BeyerDynamic DT 770 Pro headsets", "AEA R84 microphones",
+    "nVidia 4080 GPU", "Intel i9 computer", "Nakamichi RX-202E tape deck",
+    "Ibanez Roadstar II RB630 bass guitar", "Laney RB3 bass amplifier",
+    "NAD C 356BEE amplifier", "VintageDesign DMP MK2 preamp",
+    "Tube-Tech CL 1B compressors", "Traktor Kontrol S4 MK3 controller",
+    "Huawei ZQE-CBA screen", "LG 65EG screen", "Epson ET2850 printer",
+    "Bowers & Wilkins CM5 S2 speakers"
+  ],
+  "artists": [
+    {"id": "mc-peko", "name": "MC Peko", "url": "https://peko.net"},
+    {"id": "silentlab", "name": "Silentlab", "url": "https://silentlab.net"},
+    {"id": "the-skys-gone-out", "name": "The Sky's Gone Out"},
+    {"id": "howlin-of-the-wolf", "name": "Howlin' of the Wolf", "url": "https://howlinofthewolf.com"},
+    {"id": "bronson-comet-lighter", "name": "Bronson Comet Lighter", "url": "http://bronson.no"},
+    {"id": "the-love-factor", "name": "The Love Factor"}
+  ]
+}
