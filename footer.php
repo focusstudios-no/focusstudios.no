@@ -3,13 +3,13 @@
 
 
 <div class="standard">
-  &copy; <a href="https://focusstudios.no">Focus Studios</a>.
-  Some rights reserved.
+  Copyright &copy; Focus Studios. All rights reserved.
 </div>
 
 <br>
 
-Produced at <a href="https://focusstudios.no">Focus Studios</a>.
+Produced at <a href="https://focusstudios.no">Focus Studios</a> by
+<a href="https://peko.net">Ole Peko Sørensen</a>.
 
 <br>
 <br>
