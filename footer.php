@@ -12,7 +12,7 @@
       Produced at <a href="https://focusstudios.no">Focus Studios</a> by
       <a href="https://peko.net">Ole Peko Sørensen</a>.
     </div>
-    <a href="https://focusstudios.no" class="footer-logo" aria-label="Focus Studios">
+    <a href="https://focusstudios.no" class="footer-logo" aria-label="Focus Studios" title="Focus Studios">
       <img src="/img/logo.svg" alt="">
     </a>
   </div>
