@@ -2,8 +2,10 @@
 
 The Focus Studios music and visuals website.
 
-The homepage contains Software, Hardware and Artists sections, with local
-navigation to each section and artist. Studio equipment and artist records
+Software, Hardware and Artists have separate pages. The homepage retains
+the studio introduction, address and floor plan. Individual artists appear
+only on the Artists page, not on the homepage or in the Menu.
+Studio equipment and artist records
 are stored in `data/studio.json`. Only verified artist website links are
 included. The original studio introduction, address, floor plan, release
 pages and artwork are retained.

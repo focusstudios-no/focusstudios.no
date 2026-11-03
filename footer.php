@@ -24,22 +24,6 @@ Produced at <a href="https://focusstudios.no">Focus Studios</a>.
 <br>
 <br>
 
-<script>
-function revealSection() {
-  const id = window.location.hash.slice(1);
-  if (!id) return;
-  const target = document.getElementById(id);
-  if (!target) return;
-  const section = target.closest('.studio-section');
-  const details = section?.querySelector('details');
-  if (details) {
-    details.open = true;
-    target.scrollIntoView();
-  }
-}
-window.addEventListener('hashchange', revealSection);
-revealSection();
-</script>
 <script src="/index.js?v=<?php echo filemtime(__DIR__ . '/index.js'); ?>"></script>
 
 <div class="image-container">

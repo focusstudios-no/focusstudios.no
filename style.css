@@ -299,7 +299,6 @@ video {
     width: 100%;
   }
   .toc-container .icons { flex: none; }
-  .toc-container ul .artist-navigation a { font-size: 22px; padding-left: 52px; }
   .toc-container ul li a:hover, .settings-panel .toc-button:hover { background: var(--grey2); }
   .settings-panel .toc-button { color: var(--white); }
   .settings-panel .button-on, .settings-panel .button-on .icons { color: var(--color1); fill: var(--color1); }
