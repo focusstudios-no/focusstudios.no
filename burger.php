@@ -5,8 +5,8 @@
   <nav id="toc" class="toc-container" aria-label="Main navigation">
     <ul>
       <li><a href="/"><svg class="icons" aria-hidden="true"><use href="/icons.svg#home"></use></svg>Home</a></li>
-      <li><a href="/software.php"><svg class="icons" aria-hidden="true"><use href="/icons.svg#asterisk"></use></svg>Software</a></li>
-      <li><a href="/hardware.php"><svg class="icons" aria-hidden="true"><use href="/icons.svg#asterisk"></use></svg>Hardware</a></li>
+      <li><a href="/software.php"><svg class="icons" aria-hidden="true"><use href="/icons.svg#software"></use></svg>Software</a></li>
+      <li><a href="/hardware.php"><svg class="icons" aria-hidden="true"><use href="/icons.svg#hardware"></use></svg>Hardware</a></li>
       <li><a href="/artists.php"><svg class="icons" aria-hidden="true"><use href="/icons.svg#band"></use></svg>Artists</a></li>
     </ul>
     <div class="toc-close-wrap">
