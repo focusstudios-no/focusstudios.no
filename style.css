@@ -92,6 +92,11 @@ video {
   background-color: var(--grey1);
 }
 
+.home > .standard,
+.home > footer {
+  margin: 16px auto 0;
+}
+
 footer {
   display: block;
   margin: 20px auto 0;
@@ -241,6 +246,22 @@ footer {
 
   .equipment-list {
     padding-left: 24px;
+  }
+
+  .software-list {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .software-list a {
+    align-items: center;
+    display: flex;
+    gap: 12px;
+  }
+
+  .software-list .icons {
+    color: var(--white);
+    flex: none;
   }
 
   .artist-list h2 {

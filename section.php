@@ -16,7 +16,16 @@ try {
     throw new RuntimeException('Invalid studio section.');
   }
   foreach ($studio[$section] as $item) {
-    if ($section !== 'artists') {
+    if ($section === 'software') {
+      if (!is_array($item) || !isset($item['vendor'], $item['name'], $item['icon'], $item['url'])
+        || !is_string($item['vendor']) || trim($item['vendor']) === ''
+        || !is_string($item['name']) || trim($item['name']) === ''
+        || !is_string($item['icon']) || !preg_match('/^[a-z0-9-]+$/', $item['icon'])
+        || !is_string($item['url']) || !filter_var($item['url'], FILTER_VALIDATE_URL)
+        || !preg_match('~^https://~', $item['url'])) {
+        throw new RuntimeException('Invalid software record.');
+      }
+    } elseif ($section === 'hardware') {
       if (!is_string($item) || trim($item) === '') {
         throw new RuntimeException('Invalid equipment record.');
       }
@@ -58,6 +67,17 @@ try {
           </article>
         <?php endforeach; ?>
       </div>
+    <?php elseif ($section === 'software'): ?>
+      <ul class="equipment-list software-list">
+        <?php foreach ($studio[$section] as $item): ?>
+          <li>
+            <a href="<?php echo htmlspecialchars($item['url'], ENT_QUOTES, 'UTF-8'); ?>">
+              <svg class="icons" aria-hidden="true"><use href="/icons.svg?v=<?php echo filemtime(__DIR__ . '/icons.svg'); ?>#<?php echo htmlspecialchars($item['icon'], ENT_QUOTES, 'UTF-8'); ?>"></use></svg>
+              <span><?php echo htmlspecialchars($item['vendor'] . ' ' . $item['name'], ENT_QUOTES, 'UTF-8'); ?></span>
+            </a>
+          </li>
+        <?php endforeach; ?>
+      </ul>
     <?php else: ?>
       <ul class="equipment-list">
         <?php foreach ($studio[$section] as $item): ?>

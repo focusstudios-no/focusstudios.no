@@ -1,7 +1,19 @@
 {
   "software": [
-    "WaveLab", "BandLab", "Acid", "Vegas", "RX", "Waves",
-    "Photoshop", "Illustrator", "VS Code"
+    {"vendor": "Ableton", "name": "Live", "icon": "clip-sequencer", "url": "https://www.ableton.com/en/live/"},
+    {"vendor": "Adobe", "name": "Illustrator", "icon": "vector-drawing", "url": "https://www.adobe.com/products/illustrator.html"},
+    {"vendor": "Adobe", "name": "Photoshop", "icon": "image-editing", "url": "https://www.adobe.com/products/photoshop.html"},
+    {"vendor": "Adobe", "name": "Premiere Pro", "icon": "video-editing", "url": "https://www.adobe.com/products/premiere.html"},
+    {"vendor": "BandLab Technologies", "name": "BandLab", "icon": "music-workstation", "url": "https://www.bandlab.com/"},
+    {"vendor": "iZotope", "name": "RX", "icon": "audio-restoration", "url": "https://www.izotope.com/products/rx-advanced"},
+    {"vendor": "Microsoft", "name": "Visual Studio Code", "icon": "code-editor", "url": "https://code.visualstudio.com/"},
+    {"vendor": "Muse Group", "name": "Audacity", "icon": "audio-editor", "url": "https://www.audacityteam.org/"},
+    {"vendor": "Native Instruments", "name": "Traktor", "icon": "dj-mixing", "url": "https://www.native-instruments.com/products/traktor-pro"},
+    {"vendor": "OpenAI", "name": "ChatGPT", "icon": "chat-assistant", "url": "https://chatgpt.com/"},
+    {"vendor": "Spotify AB", "name": "Spotify", "icon": "music-streaming", "url": "https://www.spotify.com/"},
+    {"vendor": "Steinberg", "name": "WaveLab", "icon": "audio-mastering", "url": "https://www.steinberg.net/wavelab/"},
+    {"vendor": "VideoLAN", "name": "VLC media player", "icon": "media-cone", "url": "https://www.videolan.org/vlc/"},
+    {"vendor": "Waves Audio", "name": "plugins", "icon": "audio-effects", "url": "https://www.waves.com/plugins"}
   ],
   "hardware": [
     "Adam A7V monitors", "Teisco Synthesizer 60F",
