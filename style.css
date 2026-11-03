@@ -78,7 +78,34 @@ video {
 }
 
 .colored {
-  background-color: #222;
+  background-color: var(--grey1);
+}
+
+footer {
+  display: block;
+  margin: 20px auto 0;
+  padding: 8px 8px 32px;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.footer-branding {
+  margin-top: 16px;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-top: 16px;
+}
+
+.footer-logo img {
+  display: block;
+  height: 32px;
+  width: auto;
 }
 
 .heading {
