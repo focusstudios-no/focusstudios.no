@@ -30,12 +30,22 @@ a {
   color: #0080FF;
 }
 
-a:not(:has(img)):HOVER {
+a:not(:has(img, svg)):HOVER {
   background: #FFF;
 }
 
 a:visited {
 color: #FF00FF;
+}
+
+a:hover .icons,
+button:hover .icons {
+  opacity: 0.8;
+}
+
+.toc-container a:hover .icons,
+.toc-button:hover .icons {
+  opacity: 1;
 }
 
 ::selection {
