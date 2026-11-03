@@ -39,7 +39,8 @@ color: #FF00FF;
 }
 
 a:hover .icons,
-button:hover .icons {
+button:hover .icons,
+a.footer-logo:hover img {
   opacity: 0.8;
 }
 
