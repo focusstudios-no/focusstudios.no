@@ -3,3 +3,11 @@
 .gitignore
 .ftpignore
 README.md
+.dev/
+.vscode/
+tests/
+*.md
+.env*
+*.log
+Thumbs.db
+.DS_Store

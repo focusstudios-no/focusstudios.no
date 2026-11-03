@@ -18,3 +18,8 @@ to preview the site at http://localhost:8002/.
 
 Deploy runtime pages, assets and JSON records. Keep this README, Git
 metadata and development files out of production uploads.
+
+GitHub Actions uploads runtime files via FTPS after website changes are
+pushed to `main`. Run Deploy website manually for the initial upload or
+a retry. Configure repository secrets `FTP_SERVER`, `FTP_USERNAME`,
+`FTP_PASSWORD` and `SERVER_DIR`. The destination must end in `/`.
