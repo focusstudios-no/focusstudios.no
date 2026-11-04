@@ -1,6 +1,6 @@
 <title><?php echo htmlspecialchars($pageTitle ?? 'Focus Studios', ENT_QUOTES, 'UTF-8'); ?></title>
 <meta charset="utf-8">
-<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="icon" href="/favicon.svg?v=<?php echo filemtime(__DIR__ . '/favicon.svg'); ?>" type="image/svg+xml">
 <link rel="stylesheet" type="text/css" href="/style.css?v=<?php echo filemtime(__DIR__ . '/style.css'); ?>">
 <meta property="og:image" content="https://focusstudios.no/favicon.png">
 <meta name="keywords" content="Focus Studios, Focus, Focus Studios Fredrikstad, music studio, visuals studio, studio in Fredrikstad, studio in Norway, Fredrikstad Studio, Norway studio">
