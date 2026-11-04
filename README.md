@@ -10,6 +10,9 @@ are stored in `data/studio.json`. Only verified artist website links are
 included. The original studio introduction, address, floor plan, release
 pages and artwork are retained.
 
+On phones, release artwork fills the page width in both Grid and Details.
+Desktop thumbnail sizes and layouts remain unchanged.
+
 Software records specify `vendor`, `name`, a shared `icon` symbol and an
 official HTTPS `url`. Each icon and program name link to that product's website.
 Keep software records alphabetized by their displayed vendor-first names.
