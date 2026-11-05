@@ -5,9 +5,9 @@
   <nav id="toc" class="toc-container" aria-label="Main navigation">
     <ul>
       <li><a href="/"><svg class="icons" aria-hidden="true"><use href="/icons.svg#home"></use></svg>Home</a></li>
-      <li><a href="/software.php"><svg class="icons" aria-hidden="true"><use href="/icons.svg#display"></use></svg>Software</a></li>
-      <li><a href="/hardware.php"><svg class="icons" aria-hidden="true"><use href="/icons.svg#player"></use></svg>Hardware</a></li>
-      <li><a href="/artists.php"><svg class="icons" aria-hidden="true"><use href="/icons.svg#band"></use></svg>Artists</a></li>
+      <li><a href="/software"><svg class="icons" aria-hidden="true"><use href="/icons.svg#display"></use></svg>Software</a></li>
+      <li><a href="/hardware"><svg class="icons" aria-hidden="true"><use href="/icons.svg#player"></use></svg>Hardware</a></li>
+      <li><a href="/artists"><svg class="icons" aria-hidden="true"><use href="/icons.svg#band"></use></svg>Artists</a></li>
     </ul>
     <div class="toc-close-wrap">
       <button id="toggle-menu-close-button" class="settings-toggle" type="button" title="Close" aria-label="Close menu">

@@ -1,9 +1,18 @@
 
 RewriteEngine on
-RewriteRule ^data(?:/|$) - [F,L]
-RewriteRule ^(?:README\.md|\.ftpignore)$ - [F,L]
 RewriteCond %{HTTPS} off
 RewriteCond %{HTTP:X-Forwarded-SSL} !on
 RewriteCond %{HTTP_HOST} ^focusstudios\.no$ [OR]
 RewriteCond %{HTTP_HOST} ^www\.focusstudios\.no$
 RewriteRule ^(.*)$ "https\:\/\/focusstudios\.no\/$1" [R=301,L]
+Options -MultiViews
+DirectorySlash Off
+RewriteCond %{THE_REQUEST} "\s/+index\.php[?\s]" [NC]
+RewriteRule ^index\.php$ / [R=301,L]
+RewriteCond %{THE_REQUEST} "\s/+(software|hardware|artists|release|releases_grid|releases_details)\.php[?\s]" [NC]
+RewriteRule ^(software|hardware|artists|release|releases_grid|releases_details)\.php$ /$1 [R=301,L]
+RewriteRule ^(software|hardware|artists|release|releases_grid|releases_details)/$ /$1 [R=301,L]
+RewriteCond %{DOCUMENT_ROOT}/$1.php -f
+RewriteRule ^(software|hardware|artists|release|releases_grid|releases_details)$ $1.php [END]
+RewriteRule ^data(?:/|$) - [F,L]
+RewriteRule ^(?:README\.md|\.ftpignore)$ - [F,L]

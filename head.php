@@ -1,3 +1,8 @@
+<?php
+$canonicalPath = preg_replace('~\.php(?=\?|$)~', '', $_SERVER['REQUEST_URI'] ?? '/');
+$canonicalPath = preg_replace('~^/index(?=\?|$)~', '/', $canonicalPath);
+$canonicalUrl = $canonicalUrl ?? ('https://focusstudios.no' . $canonicalPath);
+?>
 <title><?php echo htmlspecialchars($pageTitle ?? 'Focus Studios', ENT_QUOTES, 'UTF-8'); ?></title>
 <meta charset="utf-8">
 <link rel="icon" href="/favicon.svg?v=<?php echo filemtime(__DIR__ . '/favicon.svg'); ?>" type="image/svg+xml">

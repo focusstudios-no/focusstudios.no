@@ -2,6 +2,10 @@
 
 The Focus Studios music and visuals website.
 
+Public pages use extensionless URLs, including `/software`, `/hardware`,
+`/artists`, `/release`, `/releases_grid` and `/releases_details`. `.htaccess`
+permanently redirects old PHP URLs and preserves query strings.
+
 Software, Hardware and Artists have separate pages. The homepage retains
 the studio introduction, address and floor plan. Individual artists appear
 only on the Artists page, not on the homepage or in the Menu.

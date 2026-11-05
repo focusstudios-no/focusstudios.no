@@ -5,7 +5,7 @@ if (!isset($section, $heading) || !in_array($section, ['software', 'hardware', '
   exit;
 }
 $pageTitle = $heading . ' - Focus Studios';
-$canonicalUrl = 'https://focusstudios.no/' . $section . '.php';
+$canonicalUrl = 'https://focusstudios.no/' . $section;
 try {
   $records = file_get_contents(__DIR__ . '/data/studio.json');
   if ($records === false) {
