@@ -49,10 +49,12 @@ metadata and development files out of production uploads.
 The standardized GitHub Actions workflow uploads runtime files using lftp
 over SFTP after changes are pushed to `main`. It reads `.ftpignore` and
 recovers changes since the last successful upload.
-Configure `SFTP_HOST`, `SFTP_USERNAME`, `SFTP_PASSWORD`, `SFTP_REMOTE_DIR`
+Configure `SFTP_HOST`, `SFTP_USERNAME`, `SFTP_PASSWORD`
 and optional `SFTP_PORT` (22 by default). Existing `FTP_SERVER`,
-`FTP_USERNAME`, `FTP_PASSWORD` and `SERVER_DIR` secrets are accepted as
+`FTP_USERNAME` and `FTP_PASSWORD` secrets are accepted as
 compatibility aliases. Verify their SFTP access and destination using the
 read-only **check** mode before uploading. Full mode preserves remote-only files.
+The workflow defines `SFTP_REMOTE_DIR` as `/home/flamenco/focusstudios.no`.
+The old destination variable and `SERVER_DIR` secret are not used.
 Run `node --test .github/tests/deployment.cjs` for deployment tests.
 See the shared [deployment procedure](../SITES.md#deployment).
