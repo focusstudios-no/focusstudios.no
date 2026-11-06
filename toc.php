@@ -2,7 +2,7 @@
   <?php require __DIR__ . '/burger.php'; ?>
 
   <div class="heading">
-    <a href="/">Focus Studios</a>
+    <a href="/"><img src="/img/logo.svg?v=<?php echo filemtime(__DIR__ . '/img/logo.svg'); ?>" alt="Focus Studios"></a>
   </div>
 
   <div id="settings-menu-container">

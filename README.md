@@ -38,7 +38,8 @@ referenced from the TraktorLogo.png artwork on Wikimedia Commons.
 All pages include the Menu and Settings sidebars used by MC Peko and
 Silentlab. Settings provides Dark mode, Fullscreen, Share and Reset.
 Desktop sidebar preferences persist. On phones, only one sidebar opens at
-a time. Original bitmap artwork is preserved in both interface modes.
+a time. The header home link displays the Focus Studios logo. Original bitmap
+artwork is preserved in both interface modes.
 
 Run the shared `local-tools/startup.ps1` command from the parent workspace
 to preview the site at http://localhost:8002/.
