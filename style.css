@@ -150,14 +150,6 @@ footer {
   vertical-align: top;
 }
 
-.logo {
-  max-width: 2048px;
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
 .image-container {
 	display: block;
   white-space: nowrap;

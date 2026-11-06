@@ -9,10 +9,6 @@
 
   <?php require($_SERVER['DOCUMENT_ROOT'] . "/toc.php"); ?>
 
-  <div class="standard colored">
-    <img src="/img/logo.svg" alt="Focus Studios" class="logo">
-  </div>
-
   <div class="standard colored justifyText centerOnMediumScreen">
     Focus Studios is a music and visuals establishment located in downtown Fredrikstad, Norway. You can find us at the start of walking street, top floor. We make such things as record sleeves, remixes and music videos. And we do a lot of mastering, logos and other production. By appointment only. Awesome stuff only. Price range: expensive. Organization number: <a href="https://w2.brreg.no/enhet/sok/detalj.jsp?orgnr=986758313">986758313</a>. Contact: <a href="https://peko.net">Ole Peko Sørensen</a>.
     <br>
