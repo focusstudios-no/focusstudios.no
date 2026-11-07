@@ -294,7 +294,7 @@ footer {
   }
 
   [id] {
-    scroll-margin-top: 71px;
+    scroll-margin-top: 64px;
   }
 
   :root {
@@ -305,13 +305,13 @@ footer {
     --maxwidth: 4096px;
   }
 
-  body { padding-top: 55px; }
+  body { padding-top: 48px; }
   .top-heading {
     align-items: center;
     box-sizing: border-box;
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) minmax(0, 1fr);
-    height: 55px;
+    height: 48px;
     left: 0;
     padding: 8px;
     position: fixed;
