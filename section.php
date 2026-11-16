@@ -4,7 +4,7 @@ if (!isset($section, $heading) || !in_array($section, ['software', 'hardware', '
   echo 'Page not found.';
   exit;
 }
-$pageTitle = $heading . ' - Focus Studios';
+$pageTitle = 'Focus Studios - ' . $heading;
 $canonicalUrl = 'https://focusstudios.no/' . $section;
 try {
   $records = file_get_contents(__DIR__ . '/data/studio.json');
