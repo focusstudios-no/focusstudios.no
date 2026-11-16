@@ -1,11 +1,6 @@
 html {
   background-color: #000;
   min-height: 100%;
-  background-image: url('releases_photos/24-08-2024_01.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 body {
