@@ -49,8 +49,12 @@ try {
 <head><?php require __DIR__ . '/head.php'; ?></head>
 <body>
   <?php require __DIR__ . '/toc.php'; ?>
-  <main class="studio-section standard colored" id="<?php echo $section; ?>">
-    <h1><?php echo $heading; ?></h1>
+  <main id="<?php echo $section; ?>">
+    <div class="top-line">
+      <svg class="icons" aria-hidden="true"><use href="/icons.svg#<?php echo ['software' => 'display', 'hardware' => 'player', 'artists' => 'band'][$section]; ?>"></use></svg>
+      <h1><?php echo $heading; ?></h1>
+    </div>
+    <div class="studio-section standard colored">
     <?php if ($studio === null): ?>
       <p role="alert">Studio information could not be loaded. Please try again later.</p>
     <?php elseif ($section === 'artists'): ?>
@@ -85,6 +89,7 @@ try {
         <?php endforeach; ?>
       </ul>
     <?php endif; ?>
+    </div>
   </main>
   <?php require __DIR__ . '/footer.php'; ?>
 </body>

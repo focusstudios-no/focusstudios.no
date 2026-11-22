@@ -87,6 +87,27 @@ video {
   background-color: var(--grey1);
 }
 
+.top-line {
+  align-items: center;
+  background-color: var(--grey1);
+  display: flex;
+  margin: 0 auto 16px;
+  padding: 8px 10px;
+}
+
+.top-line h1 {
+  flex: 1;
+  font-size: 28px;
+  line-height: 1.25;
+  margin: 0;
+  text-align: center;
+}
+
+.top-line::after {
+  content: "";
+  flex: 0 0 32px;
+}
+
 .home > .standard,
 .home > footer {
   margin: 16px auto 0;
@@ -250,18 +271,12 @@ footer {
     cursor: pointer;
   }
 
-  .studio-section h1 {
-    display: inline;
-    font-size: 28px;
-    margin: 0;
-  }
-
   .equipment-list,
   .artist-list {
     display: grid;
     gap: 16px 32px;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
-    margin: 20px 0 0;
+    margin: 0;
   }
 
   .equipment-list {
