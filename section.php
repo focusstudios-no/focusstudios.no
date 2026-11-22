@@ -20,7 +20,7 @@ try {
       if (!is_array($item) || !isset($item['vendor'], $item['name'], $item['icon'], $item['url'])
         || !is_string($item['vendor']) || trim($item['vendor']) === ''
         || !is_string($item['name']) || trim($item['name']) === ''
-        || !is_string($item['icon']) || !preg_match('/^[a-z0-9-]+$/', $item['icon'])
+        || !is_string($item['icon']) || !preg_match('/^[a-z0-9_]+$/', $item['icon'])
         || !is_string($item['url']) || !filter_var($item['url'], FILTER_VALIDATE_URL)
         || !preg_match('~^https://~', $item['url'])) {
         throw new RuntimeException('Invalid software record.');

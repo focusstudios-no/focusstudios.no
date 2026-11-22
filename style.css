@@ -384,6 +384,9 @@ footer {
   }
   .toc-container .icons { flex: none; }
   .toc-container ul li a:hover, .settings-panel .toc-button:hover { background: var(--grey2); }
+  .toc-container ul li a { color: var(--white); }
+  .toc-container ul li a .icons { fill: currentColor; }
+  .toc-container ul li a[aria-current="page"] { color: var(--color1); }
   .settings-panel .toc-button { color: var(--white); }
   .settings-panel .button-on, .settings-panel .button-on .icons { color: var(--color1); fill: var(--color1); }
   .settings-panel button:disabled { cursor: default; opacity: 0.5; }
