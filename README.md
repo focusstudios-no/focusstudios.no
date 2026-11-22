@@ -26,7 +26,8 @@ and Visual Studio Code use recognizable brand artwork from
 [Simple Icons](https://github.com/simple-icons/simple-icons), distributed under
 [CC0](https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md):
 version 11 for all except Live (version 5). Adobe tiles retain rounded corners.
-ChatGPT, VLC and Spotify also use Simple Icons version 11 artwork.
+ChatGPT and VLC also use Simple Icons version 11 artwork. Spotify uses the
+existing shared Spotify symbol.
 Audacity follows the supplied current icon, with rounded headphones and a
 central waveform, adapted to monochrome without the background disc.
 WaveLab's triangular W, RX's concentric rings and Waves' waveform
