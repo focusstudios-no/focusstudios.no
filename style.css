@@ -392,17 +392,21 @@ footer {
   body.settings-sidebar-open #toggle-settings-panel-button .icons { fill: var(--color1); }
   body.toc-lock, body.settings-lock { overflow: hidden; }
   @media (min-width: 800px) {
-    :root { --sidebar-width: min(320px, 28vw); }
+    :root { --sidebar-width: min(320px, 28vw); --site-frame-offset: max(0px, calc((100vw - var(--maxwidth)) / 2)); }
     .toc-container, .settings-panel {
       bottom: auto;
       height: calc(100dvh - 80px);
       margin: 16px 0;
       width: var(--sidebar-width);
     }
-    .toc-container { right: auto; }
-    .settings-panel { left: auto; }
-    body.toc-sidebar-open { margin-left: calc(var(--sidebar-width) + 16px); }
-    body.settings-sidebar-open { margin-right: calc(var(--sidebar-width) + 16px); }
+    .toc-container { left: var(--site-frame-offset); right: auto; }
+    .settings-panel { left: auto; right: var(--site-frame-offset); }
+    body {
+      margin-left: calc(var(--site-frame-offset) + var(--toc-sidebar-space, 0px));
+      margin-right: calc(var(--site-frame-offset) + var(--settings-sidebar-space, 0px));
+    }
+    body.toc-sidebar-open { --toc-sidebar-space: calc(var(--sidebar-width) + 16px); }
+    body.settings-sidebar-open { --settings-sidebar-space: calc(var(--sidebar-width) + 16px); }
   }
   .invert-colors body > :not(.top-heading),
   .invert-colors .top-heading > .heading,
