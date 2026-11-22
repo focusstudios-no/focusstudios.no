@@ -301,6 +301,8 @@ footer {
   }
 
   body { padding-top: 64px; }
+  .top-heading + * { margin-top: 0; }
+  .home > .top-heading + .standard { margin-top: 0; }
   .top-heading {
     align-items: center;
     box-sizing: border-box;
