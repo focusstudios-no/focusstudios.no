@@ -103,11 +103,6 @@ video {
   text-align: center;
 }
 
-.top-line::after {
-  content: "";
-  flex: 0 0 32px;
-}
-
 .home > .standard,
 .home > footer {
   margin: 16px auto 0;

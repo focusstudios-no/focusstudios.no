@@ -6,6 +6,7 @@ if (!isset($section, $heading) || !in_array($section, ['software', 'hardware', '
 }
 $pageTitle = 'Focus Studios - ' . $heading;
 $canonicalUrl = 'https://focusstudios.no/' . $section;
+$sectionIcon = ['software' => 'display', 'hardware' => 'player', 'artists' => 'band'][$section];
 try {
   $records = file_get_contents(__DIR__ . '/data/studio.json');
   if ($records === false) {
@@ -51,8 +52,9 @@ try {
   <?php require __DIR__ . '/toc.php'; ?>
   <main id="<?php echo $section; ?>">
     <div class="top-line">
-      <svg class="icons" aria-hidden="true"><use href="/icons.svg#<?php echo ['software' => 'display', 'hardware' => 'player', 'artists' => 'band'][$section]; ?>"></use></svg>
+      <svg class="icons" aria-hidden="true"><use href="/icons.svg#<?php echo $sectionIcon; ?>"></use></svg>
       <h1><?php echo $heading; ?></h1>
+      <svg class="icons" aria-hidden="true"><use href="/icons.svg#<?php echo $sectionIcon; ?>"></use></svg>
     </div>
     <div class="studio-section standard colored">
     <?php if ($studio === null): ?>

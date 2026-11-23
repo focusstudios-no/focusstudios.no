@@ -12,6 +12,7 @@
   <div class="top-line">
     <svg class="icons" aria-hidden="true"><use href="/icons.svg#home"></use></svg>
     <h1>Home</h1>
+    <svg class="icons" aria-hidden="true"><use href="/icons.svg#home"></use></svg>
   </div>
 
   <div class="standard colored justifyText centerOnMediumScreen">
