@@ -13,6 +13,7 @@ $ogImageSize = getimagesize(__DIR__ . '/favicon.png');
 ?>
 <title><?php echo htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8'); ?></title>
 <meta charset="utf-8">
+<script src="/resize_table.js?v=<?php echo filemtime(__DIR__ . '/resize_table.js'); ?>" defer></script>
 <link rel="icon" href="/favicon.svg?v=<?php echo filemtime(__DIR__ . '/favicon.svg'); ?>" type="image/svg+xml">
 <link rel="stylesheet" type="text/css" href="/style.css?v=<?php echo filemtime(__DIR__ . '/style.css'); ?>">
 <meta property="og:image" content="https://focusstudios.no/favicon.png">
