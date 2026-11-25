@@ -37,7 +37,11 @@ Traktor uses a simplified monochrome adaptation of its circular deck mark,
 referenced from the TraktorLogo.png artwork on Wikimedia Commons.
 
 All pages include the Menu and Settings sidebars used by MC Peko and
-Silentlab. Settings provides Dark mode, Fullscreen, Share and Reset.
+Silentlab. Settings provides Dark mode, Fullscreen, Share, Background and Reset.
+Background is off by default and uses the existing studio photo. The TOC starts
+with Home, Previous page, Play and Next page. Shared component copies
+`site_ui.php`, `site_ui.css` and `site_ui.js` are maintained from Pekosoft,
+with local image configuration in `data/site_ui.json`.
 Desktop sidebar preferences persist. On phones, only one sidebar opens at
 a time. The header home link displays the Focus Studios logo. Original bitmap
 artwork is preserved in both interface modes.

@@ -30,3 +30,4 @@ $ogImageSize = getimagesize(__DIR__ . '/favicon.png');
 <meta name="description" content="This is the official website for the music and visuals studio Focus Studios, Fredrikstad, Norway.">
 <link rel="canonical" href="<?php echo htmlspecialchars($canonicalUrl ?? 'https://focusstudios.no', ENT_QUOTES, 'UTF-8'); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">    
+<?php require __DIR__ . '/site_ui.php'; ?>
